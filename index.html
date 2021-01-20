@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Generator</title>
+    <script src="script.js"></script>
+    <style>
+        .stadium {
+            background: #669b3b;
+            width: 400px;
+            height: 600px;
+            margin-right: 10px;
+            position: relative;
+            float: left;
+        }
+        .stadium .center {
+            position: absolute;
+            background: #fff;
+            width: 100%;
+            height: 3px;
+            top: 50%;
+            left: 0;
+        }
+
+        .stadium .circle {
+            position: absolute;
+            border: 3px solid #fff;
+            width: 130px;
+            height: 130px;
+            top: calc(50% - 65px);
+            left: calc(50% - 65px);
+            border-radius: 100%;
+        }
+
+        .stadium .goal {
+            position: absolute;
+            border: 3px solid #fff;
+            width: 90px;
+            height: 50px;
+            left: calc(50% - 45px);
+            top: -3px;
+        }
+
+        .stadium .goal.bottom {
+            bottom: -3px;
+            top: auto;
+        }
+
+        .stadium .player {
+            position: absolute;
+            text-align: center;
+        }
+        .stadium .player .position {
+            width: 25px;
+            height: 25px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 100%;
+            background: red;
+            display: block;line-height: 2;
+            border: 2px solid #ffffff;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        .stadium .player .player-name {
+            color: #ffffff;
+        }
+
+        .stadium .player.gk {
+            bottom: 0;
+            left: calc(50% - 12px);
+        }
+
+        .stadium .player.lb {
+            bottom: 100px;
+            left: 85px;
+        }
+
+        .stadium .player.rb {
+            bottom: 100px;
+            right: 85px;
+        }
+
+        .stadium .player.cm {
+            top: 50%;
+            left: 50%;
+        }
+
+        .stadium .player.cm {
+            top: 40%;
+            left: calc(50% - 12px);
+        }
+
+        .stadium .player.fw {
+            top: 5%;
+            left: 50%;
+        }
+
+        .stadium .rating {
+            background: #ffffff;
+            position: absolute;
+            padding: 10px;
+            left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="stadium">
+            <div class="center"></div>
+            <div class="circle"></div>
+            <div class="goal"></div>
+            <div class="goal bottom"></div>
+            <div id="firstTeam"></div>
+        </div>
+        <div class="stadium">
+            <div class="center"></div>
+            <div class="circle"></div>
+            <div class="goal"></div>
+            <div class="goal bottom"></div>
+            <div id="secondTeam"></div>
+        </div>
+        <div  class="stadium">
+            <div class="center"></div>
+            <div class="circle"></div>
+            <div class="goal"></div>
+            <div class="goal bottom"></div>
+            <div id="thirdTeam"></div>
+        </div>
+</body>
+</html>
