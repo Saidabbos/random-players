@@ -7,62 +7,62 @@ var players = [
     {
         name: 'De Gea',
         position: 'gk',
-        rating: 93
+        rating: 86
     },
     {
         name: 'Ramero',
         position: 'gk',
-        rating: 65
+        rating: 80
     },
     {
         name: 'Grant',
         position: 'gk',
-        rating: 50
+        rating: 69
     },
     {
         name: 'Baily',
         position: 'rb',
-        rating: 75
+        rating: 79
     },
     {
         name: 'Maguire',
         position: 'lb',
-        rating: 85
+        rating: 82
     },
     {
         name: 'Williams',
         position: 'lb',
-        rating: 74
+        rating: 75
     },
     {
         name: 'Lindelof',
         position: 'rb',
-        rating: 80
+        rating: 79
     },
     {
         name: 'L. Shaw',
         position: 'lb',
-        rating: 85
+        rating: 80
     },
     {
         name: 'A. Wan Bissaka',
         position: 'rb',
-        rating: 90
+        rating: 83
     },
     {
         name: 'Fred',
         position: 'cm',
-        rating: 80
+        rating: 81
     },
     {
         name: 'Pogba',
         position: 'cm',
-        rating: 90
+        rating: 86
     },
     {
         name: 'Fernandes',
         position: 'cm',
-        rating: 95
+        rating: 88
     },
     {
         name: 'McTominay',
@@ -77,51 +77,42 @@ var players = [
     {
         name: 'Van De Beek',
         position: 'cm',
-        rating: 75
+        rating: 83
     },
     {
         name: 'J. Mata',
         position: 'cm',
-        rating: 80
+        rating: 79
     },
     {
         name: 'Rashford',
         position: 'fw',
-        rating: 95
+        rating: 85
     },
     {
         name: 'E. Cavani',
         position: 'fw',
-        rating: 92
+        rating: 84
     },
     {
         name: 'Martial',
         position: 'fw',
-        rating: 90
+        rating: 83
     },
     {
         name: 'Greenwood',
         position: 'fw',
-        rating: 80
+        rating: 77
     },
     {
-        name: 'Igholo',
+        name: 'Daniel James',
         position: 'fw',
-        rating: 70
+        rating: 77
     }
 ]
 
 function generateTeam (opponent = []) {
     var team = [];
-    // for (var i= 0; i < 5; i++) {
-    //     switch (i) {
-    //         case 0: team[i] = getPlayer('gk', opponent); break
-    //         case 1: team[i] = getPlayer('rb', opponent); break
-    //         case 2: team[i] = getPlayer('lb', opponent); break
-    //         case 3: team[i] = getPlayer('cm', opponent); break
-    //         case 4: team[i] = getPlayer('fw', opponent); break
-    //     }
-    // }
 
     ['gk', 'rb', 'lb', 'cm', 'fw'].map((item, index) => {
         team[index] = getPlayer(item, opponent.concat(team));
